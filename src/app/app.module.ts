@@ -7,12 +7,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CustomMaterialModule } from './core/material.module';
 import { HeaderTopComponent } from './header-top/header-top.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderTopComponent,
-    MainNavComponent
+    MainNavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
