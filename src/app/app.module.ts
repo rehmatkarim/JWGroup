@@ -13,6 +13,9 @@ import { ServicesComponent } from './services/services.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OurTeamComponent } from './our-team/our-team.component';
 import { StatsComponent } from './stats/stats.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { OwnerMessageComponent } from './owner-message/owner-message.component';
+import { ClientSlidersComponent } from './client-sliders/client-sliders.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { StatsComponent } from './stats/stats.component';
     ServicesComponent,
     OurTeamComponent,
     StatsComponent,
+    ProjectsComponent,
+    OwnerMessageComponent,
+    ClientSlidersComponent,
 
 
   ],
