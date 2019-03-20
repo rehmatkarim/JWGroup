@@ -12,6 +12,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OurTeamComponent } from './our-team/our-team.component';
+import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { OurTeamComponent } from './our-team/our-team.component';
     AboutUsComponent,
     ServicesComponent,
     OurTeamComponent,
+    StatsComponent,
 
 
   ],
