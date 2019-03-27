@@ -1,0 +1,22 @@
+.main-para{
+  font-family: sans-serif;
+  color:black;
+  text-align: center;
+
+
+}
+.owner-message{
+  background-color:#F8F9FA;
+}
+.msg{
+  margin-top:10%;
+}
+.ceo-pic{
+  border-radius:90%;
+  height: 20vh;
+  width: 15vw;
+  margin-top: 8%;
+}
+.icos{
+  padding: 0 10px;
+}

@@ -1,0 +1,20 @@
+hr{
+  width: 100px;
+  border: 1px solid  #ff4d4d;
+  margin-left: 0;
+  padding-left: 0;
+
+
+}
+.main-heading{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 50px;
+
+  font-size: 40px;
+
+}
+.main-para{
+  font-family: sans-serif;
+  color: grey;
+
+}

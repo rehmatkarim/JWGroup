@@ -1,0 +1,92 @@
+<ng-template #content let-modal class="services-modal">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">{{heading}}</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="modal-para text-center">{{name[heading]}}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </ng-template>
+<div class="ourservices">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h3 class="main-heading text-center">Our Services</h3>
+        <hr class="mx-auto">
+        <p class="main-para text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+           Aenean commodo ligula eget dolor. Aenean massa um sociis natoque penatibus et magnis
+            dis parturient montes, nascetur ridiculus mus. </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-3 border services-card">
+
+        <img src="assets/images/crane.png" alt="icon" class="icon">
+        <h4 class="sub-heading text-center">Machinery</h4>
+        <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
+            Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+          </p>
+          <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Machinery')" >See More</button>
+      </div>
+      <div class="col-md-3 border services-card">
+          <img src="assets/images/trade.png" alt="icon" class="icon">
+          <h4 class="sub-heading text-center">Trade</h4>
+          <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
+              Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+            </p>
+            <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Trade')">See More</button>
+      </div>
+      <div class="col-md-3 border services-card">
+          <img src="assets/images/construction.png" alt="icon" class="icon">
+          <h4 class="sub-heading text-center">Construction & Building Material</h4>
+          <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
+              Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+            </p>
+            <button mat-button class="btn btn-danger see-button"(click)="open(content, 'Construction & Building Material')">See More</button>
+      </div>
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-3 border services-card">
+          <img src="assets/images/agriculture.png" alt="icon" class="icon">
+          <h4 class="sub-heading text-center">Agriculture</h4>
+          <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
+              Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+            </p>
+            <button mat-button class="btn btn-danger see-button"(click)="open(content, 'Agriculture')">See More</button>
+        </div>
+        <div class="col-md-3 border services-card">
+            <img src="assets/images/export.png" alt="icon" class="icon">
+            <h4 class="sub-heading text-center">Import & Export</h4>
+            <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
+                Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+              </p>
+              <button mat-button class="btn btn-danger see-button"(click)="open(content, 'Import & Export')">See More</button>
+        </div>
+        <div class="col-md-3 border services-card">
+            <img src="assets/images/construction.png" alt="icon" class="icon">
+            <h4 class="sub-heading text-center">Construction & Building Material</h4>
+            <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
+                Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+
+              </p>
+                <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Construction')">See More</button>
+
+
+        </div>
+
+      </div>
+
+
+  </div>
+</div>
