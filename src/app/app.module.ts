@@ -16,6 +16,7 @@ import { StatsComponent } from './stats/stats.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { OwnerMessageComponent } from './owner-message/owner-message.component';
 import { ClientSlidersComponent } from './client-sliders/client-sliders.component';
+import { TallFooterComponent } from './tall-footer/tall-footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ClientSlidersComponent } from './client-sliders/client-sliders.componen
     ProjectsComponent,
     OwnerMessageComponent,
     ClientSlidersComponent,
+    TallFooterComponent,
 
 
   ],
