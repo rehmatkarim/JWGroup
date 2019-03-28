@@ -10,5 +10,34 @@
 
 }
 hr{
-  color:#9fa1a3;
+  color:red;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid red;
+  margin: 1em 0;
+  padding: 0;
 }
+.icon-div{
+  margin-bottom: 3%;
+  margin-top: 4%;
+}
+li {
+  list-style-type: none;
+  margin: 2%;
+  padding:4px;
+  border: none;
+  background-color:#190808 !important;
+  color: #fff;
+}
+.sub-heading{
+  font-weight: bolder;
+  padding-top: 10px;
+}
+.sub-para{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(173, 162, 162);
+  padding: 1px;
+  margin-top: 4%;
+}
+
