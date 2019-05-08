@@ -7,14 +7,21 @@
 }
 .owner-message{
   background-color:#F8F9FA;
+  text-align: center;
 }
 .msg{
   margin-top:10%;
 }
+.main-heading {
+  padding: 20px;
+}
+.main-para>p{
+  text-align: center;
+}
 .ceo-pic{
-  border-radius:90%;
+  border-radius:80%;
   height: 20vh;
-  width: 15vw;
+  width: 20vh;
   margin-top: 8%;
 }
 .icos{
