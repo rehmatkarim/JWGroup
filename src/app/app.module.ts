@@ -18,6 +18,7 @@ import { OwnerMessageComponent } from './owner-message/owner-message.component';
 import { ClientSlidersComponent } from './client-sliders/client-sliders.component';
 import { TallFooterComponent } from './tall-footer/tall-footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SmallFooterComponent } from './small-footer/small-footer.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ProjectsComponent,
     OwnerMessageComponent,
     ClientSlidersComponent,
-    TallFooterComponent
+    TallFooterComponent,
+    SmallFooterComponent
 
 
   ],
