@@ -40,5 +40,12 @@ li {
   padding: 1px;
   margin-top: 4%;
 }
+.social-media-icons{
+  padding-left: 25px;
+  padding-right: 25px;
 
+}
+.icon-box>a {
+  color: red !important;
+}
 
