@@ -6,10 +6,16 @@
   background-attachment: fixed;
   position: relative;
   color:#fff;
+  padding: 50px;
+  text-align: center;
 }
 stat-col >h1{
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 
+}
+.stat-icons {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
 
