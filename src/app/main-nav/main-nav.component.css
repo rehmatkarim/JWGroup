@@ -1,12 +1,29 @@
 .nav-item{
   padding: 10px;
+
 }
 .navbar{
 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold !important;
+
 }
 .logo{
   height: 40px;
   width: 120px;
 }
+
+.main-nav {
+  width: 100% !important;
+  margin:0 !important;
+  left:0 !important;
+  right:0 !important;
+  top:0 !important;
+  overflow: hidden !important;
+  display: block !important;
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  z-index: 5 !important;
+}
+
+/* .nav-item .active { background-color: rgba(255, 255, 255, .4); }  */

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-header-top',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-top.component.css']
 })
 export class HeaderTopComponent implements OnInit {
+  
 
   constructor() { }
 
+
+  
   ngOnInit() {
   }
+
+
+  
 
 }

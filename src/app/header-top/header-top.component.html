@@ -1,8 +1,9 @@
 <header class="h-100 head-top">
-    <mdb-navbar SideClass="navbar  navbar-expand-lg navbar-dark blue scrolling-navbar intro-fixed-nav" [containerInside]="false">
+
+  <!-- <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue scrolling-navbar intro-fixed-nav " [containerInside]="false">
 
       <links>
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav nav mx-auto">
           <li class="nav-item active waves-light" mdbWavesEffect>
             <a href="#"><i class="fas fa-map-marker-alt icon"></i>Address</a>
 
@@ -15,13 +16,66 @@
           </li>
         </ul>
       </links>
-    </mdb-navbar>
+    </mdb-navbar> -->
+  <mat-toolbar>
+    <mat-toolbar-row class="navbar navbar-expand-lg navbar-dark blue scrolling-navbar intro-fixed-nav">
+      <!-- <mat-toolbar-row fxShow fxHide.lt-md="true"> -->
+
+      <span class="brand-links mx-auto">
+        <a href="#"><i class="fas fa-map-marker-alt icon"></i>Address</a>
+        <a href="#"> <i class="far fa-envelope-open icon"></i>abc@xyz.com</a>
+        <a href="#"> <i class="fas fa-phone icon"></i>+92-111-1111</a>
+        <!-- <ul class="navbar-nav nav mx-auto">
+                  <li class="nav-item active waves-light" mdbWavesEffect>
 
 
-    <app-main-nav></app-main-nav>
+                  </li>
+                  <li class="nav-item waves-light " mdbWavesEffect>
 
-    <!-- /.Main -->
+                  </li>
+                  <li class="nav-item waves-light" mdbWavesEffect>
+
+                  </li>
+                </ul> -->
+      </span>
+
+    </mat-toolbar-row>
+    <!-- <mat-toolbar-row> -->
+    <!-- <span class="brand-name" fxFlex="none" fxShow fxHide.lt-md="true">
+            <!-- <a class="logo navbar-brand" href="#"><img src="assets/images/logo.jpg" alt="logo" class="logo"></a> -->
+    <!-- </span>  -->
+
+    <!-- <span class="brand-name mx-auto" fxHide fxShow.lt-md="true">
+
+              <a class="logo navbar-brand" href="#"><img src="assets/images/logo.jpg" alt="logo" class="logo"></a>
+            </span> -->
+    <!-- <span class="example-fill-remaining-space"></span> -->
+    <!-- <span class="logged-user ml-auto">
+              <ul class="navbar-nav ml-auto" id = "navbar-scrollspy" >
+                <li class="nav-item waves-light home"  [ngClass]="{'active': selectedItem === 'home'}" (click)="selectedItem = 'home'" mdbWavesEffect>
+                    <a class="nav-link" href="#home"  (click) = "selectedItem = 'home'">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item waves-light" [ngClass]="{'active': selectedItem === 'aboutus'}" (click)="selectedItem = 'aboutus'" mdbWavesEffect>
+                    <a   class="nav-link"  href="#aboutus"   (click) = "selectedItem = 'aboutus'">About Us</a>
+                </li>
+                <li class="nav-item waves-light" mdbWavesEffect>
+                    <a class="nav-link" href="#ourservices" >Our Services</a>
+                </li>
+                <li class="nav-item waves-light" mdbWavesEffect>
+                    <a class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            </span> -->
+    <!-- </mat-toolbar-row> -->
+
+
+  </mat-toolbar>
+
+
+
 </header>
+<app-main-nav></app-main-nav>
+
 <app-home></app-home>
 <app-about-us></app-about-us>
 <app-services></app-services>
@@ -29,4 +83,3 @@
 <app-projects></app-projects>
 <app-owner-message></app-owner-message>
 <app-tall-footer></app-tall-footer>
-
