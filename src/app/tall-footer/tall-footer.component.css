@@ -3,6 +3,9 @@
   color:#fff;
 
 }
+.link > a {
+  color: white !important;
+}
 .icon{
   text-align: center;
   display:inline-block;

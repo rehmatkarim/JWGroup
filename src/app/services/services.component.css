@@ -50,7 +50,7 @@ a{
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../assets/images/1.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
+  background-size:contain;
   background-attachment: fixed;
   position: relative;
   /* padding: 10px; */
@@ -65,3 +65,4 @@ a{
   background-color: #5e97f2 !important;
 
 }
+

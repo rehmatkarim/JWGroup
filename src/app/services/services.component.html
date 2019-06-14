@@ -1,15 +1,17 @@
-<ng-template #content let-modal class="services-modal">
+<ng-template #content let-modal class="services-modal" >
     <div class="modal-header">
       <h4 class="modal-title" id="modal-basic-title">{{heading}}</h4>
       <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <div class="modal-body">
+    <div class="modal-body" style="overflow-y: auto; max-height:500px;">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p class="modal-para text-center">{{name[heading]}}</p>
+              <div class="modal-para" [innerHTML]="name[heading]"></div>
+
+            <!-- <p  [innerHTML]="body"></p> -->
           </div>
         </div>
       </div>
@@ -23,34 +25,34 @@
       <div class="col-md-8">
         <h3 class="main-heading text-center">Our Services</h3>
         <hr class="mx-auto">
-        <p class="main-para text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-           Aenean commodo ligula eget dolor. Aenean massa um sociis natoque penatibus et magnis
-            dis parturient montes, nascetur ridiculus mus. </p>
+        <p class="main-para text-center">We provide services in the following Business sectors. </p>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-md-3 border services-card">
 
         <img src="assets/images/crane.png" alt="icon" class="icon">
-        <h4 class="sub-heading text-center">Machinery</h4>
-        <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
-            Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+        <h4 class="sub-heading text-center">Machinery & Equipment</h4>
+        <p class="sub-para text-center">All Equipment & Machinery that are required in standard
+          Construction & Developments Including Power Houses, Dams, irrigation water resources,
+          High Altitude Buildings, Railways, Roads, Bridges, Tunnels & Canals etc.
           </p>
-          <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Machinery')" >See More</button>
+          <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Machinery & Equipment')" >See More</button>
       </div>
       <div class="col-md-3 border services-card">
           <img src="assets/images/trade.png" alt="icon" class="icon">
-          <h4 class="sub-heading text-center">Trade</h4>
-          <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
-              Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+          <h4 class="sub-heading text-center">Trade & Logistics</h4>
+          <p class="sub-para text-center">To enhance trade between Pakistan & China in term of logistics
+            as recently in Pakistan Phase one has been completed by CPEC and Phase II is in progress.
+            Phase II mainly consists of railway track line to connect Xinjiang China to Abbottabad then
+            Gawadar Pakistan which will make the transportation of logistics very efficiently and convenient.
             </p>
-            <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Trade')">See More</button>
+            <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Trade & Logistics')">See More</button>
       </div>
       <div class="col-md-3 border services-card">
           <img src="assets/images/construction.png" alt="icon" class="icon">
           <h4 class="sub-heading text-center">Construction & Building Material</h4>
-          <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
-              Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+          <p class="sub-para text-center">Prime Minster Mr. Imran khan Naya Pakistan Housing Scheme 2018 five Million Houses to build it’s a huge amount of houses that would require construction and building materials.       Due to ongoing CPEC project there is bundle of requirement in this sector also Pakistan is underdeveloped country thus requires vast amount materials.
             </p>
             <button mat-button class="btn btn-danger see-button"(click)="open(content, 'Construction & Building Material')">See More</button>
       </div>
@@ -60,32 +62,53 @@
         <div class="col-md-3 border services-card">
           <img src="assets/images/agriculture.png" alt="icon" class="icon">
           <h4 class="sub-heading text-center">Agriculture</h4>
-          <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
-              Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+          <p class="sub-para text-center">Pakistan's principal natural resources are Arable land and water. About 25% of Pakistan's agriculture accounts for about 21% of GDP and employs about 43% of the labor force. In Pakistan, the most agricultural province is Punjab where wheat and cotton are the most grown. Mango orchards are mostly found in Sindh and Punjab provinces that make Pakistan the world's 4th largest producer of mangoes.
             </p>
             <button mat-button class="btn btn-danger see-button"(click)="open(content, 'Agriculture')">See More</button>
         </div>
         <div class="col-md-3 border services-card">
             <img src="assets/images/export.png" alt="icon" class="icon">
             <h4 class="sub-heading text-center">Import & Export</h4>
-            <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
-                Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+            <p class="sub-para text-center">Pakistan has bilateral and multilateral trade agreements with many nations and international organizations. It is a member of the World Trade Organization, part of the South Asian Free Trade Area agreement and the China-Pakistan Free Trade Agreement. Pakistan's exports continue to be dominated by cotton textiles and apparel, imports include petroleum.
               </p>
               <button mat-button class="btn btn-danger see-button"(click)="open(content, 'Import & Export')">See More</button>
         </div>
         <div class="col-md-3 border services-card">
-            <img src="assets/images/construction.png" alt="icon" class="icon">
-            <h4 class="sub-heading text-center">Construction & Building Material</h4>
-            <p class="sub-para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad alias odio enim accusantium,
-                Numquam vitae aut provident! Fugit quae reprehenderit deleniti optio?
+            <img src="assets/images/e-commerce.png" alt="icon" class="icon">
+            <h4 class="sub-heading text-center">E-Commerce</h4>
+            <p class="sub-para text-center">Pakistan's e-trading mainly involves buying and selling goods and services using internet or telephone, through the use of electronic means such as computer, fax machine, cellular phone, automated teller machines (ATM) and other electronic appliances with or without using inter-net. Online banking, e-ticketing for air traveling, share trading in stock exchange are few examples of e-commerce of modern advancement. 
 
               </p>
-                <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Construction')">See More</button>
+                <button mat-button class="btn btn-danger see-button" (click)="open(content, 'E-Commerce')">See More</button>
 
 
         </div>
 
       </div>
+      <div class="row justify-content-center">
+          <div class="col-md-3 border services-card">
+    
+            <img src="assets/images/electrical.png" alt="icon" class="icon">
+            <h4 class="sub-heading text-center">Electric Appliances</h4>
+            <p class="sub-para text-center">There are numerous home appliances manufacturing companies working in Pakistan, manufacturing the international quality appliances locally. But Mostly Pakistan imports the most of the electronics & home appliances from abroad especially solar panels etc.
+              </p>
+              <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Electric Appliances')" >See More</button>
+          </div>
+          <div class="col-md-3 border services-card">
+              <img src="assets/images/textiles.png" alt="icon" class="icon">
+              <h4 class="sub-heading text-center">Textiles</h4>
+              <p class="sub-para text-center">The Textile industry in Pakistan is the largest manufacturing industry in Pakistan. Pakistan is the 8th largest exporter of textile commodities in Asia. Textile sector contributes 8.5% to the GDP of Pakistan. In addition, the sector employs about 45% of the total labor force in the country (and 38% of the manufacturing workers).
+                </p>
+                <button mat-button class="btn btn-danger see-button" (click)="open(content, 'Textiles')">See More</button>
+          </div>
+          <div class="col-md-3 border services-card">
+              <img src="assets/images/handicraft.png" alt="icon" class="icon">
+              <h4 class="sub-heading text-center">Handicrafts & Artifact</h4>
+              <p class="sub-para text-center">Pakistan has a rich and diverse history of handicrafts. The entire wealth of timeless Pakistani handicrafts has survived through ages. The legacy of Pakistani culture promises everything- beauty, dignity, form and style. Every city has its own handicrafts specialty ranging from fabric, material, embroidery, to jewelry, carving, mirror work and other handicraft items.                </p>
+                <button mat-button class="btn btn-danger see-button"(click)="open(content, 'Handicrafts & Artifact')">See More</button>
+          </div>
+    
+        </div>
 
 
   </div>
